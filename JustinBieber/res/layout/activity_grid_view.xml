@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+	<GridView 
+	    android:id="@+id/grid_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:numColumns="auto_fit"
+	    android:gravity="center"
+	    android:stretchMode="columnWidth"
+	    android:background="#000000"> 
+	</GridView>
+	
+	<com.google.ads.AdView
+	       android:id="@+id/adView"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_alignParentBottom="true"
+	       ads:adSize="BANNER"
+	       ads:adUnitId="a1525cc11c644e9"
+	       ads:loadAdOnCreate="true"
+	       />
+</RelativeLayout>
